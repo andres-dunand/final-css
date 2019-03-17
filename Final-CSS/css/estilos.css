@@ -1,44 +1,68 @@
 body {
 	font-family: Indie Flower;
+	background:  #02010a;
 }
 
-.c1{
-	text-shadow: 2px 2px 2px #02010a;
-	text-align: left;
-	min-height: 20px;
-	flex-basis: 78%;
-	text-align: justify;
-}
-
-a{
-  color: white;
-}
-
-.c2{
-	min-height: 20px;
-	flex-basis: 7%;
-    margin: 2rem 0 0 0;
-	text-align: center;
+.c1 {
+	width: 100%;
 	color: white;
-}
-.c3{
-	min-height: 20px;
-	flex-basis: 7%;
-    margin: 2rem 0 0 0;
-    text-align: center;
-}
-.c4{
-	min-height: 20px;
-	flex-basis: 7%;
-	margin: 2rem 0 0 0;
 	text-align: center;
-}
+	}
+.c2 {
+	width: 100%;
+	color: white;
+	text-align: center;
+	}
+
+
+	@media (min-width: 900px) {
+		.c1 {
+			width: 70%;
+			text-align: left;
+			color: white;
+			}
+
+		.c2 {
+			width: 26%;
+			color: white;
+			}
+
+		.container {
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+			}
+	}
+
 .container {
-	display: flex;
-	flex-direction: row wrap;
-	color: white;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+.container div {
+	box-sizing: border-box;
+	min-width: 50px;
+	padding: 20px;
+	
+}
+
+.c1 {
 	background-color: #5b7989;
-	border-radius: 10px;
+	text-shadow: 2px 2px 2px #02010a;
+	color: white;
+}
+
+.c2 {
+	color: white;
+	background-color: #F4F1BB;
 }
 
 
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
