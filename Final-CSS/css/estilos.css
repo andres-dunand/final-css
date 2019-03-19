@@ -1,5 +1,5 @@
 body {
-	font-family: Indie Flower;
+	font-family: Dancing Script;
 	background:  #02010a;
 }
 
@@ -7,11 +7,15 @@ body {
 	width: 100%;
 	color: white;
 	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+	font-size: 1.2em;
 	}
+
 .c2 {
 	width: 100%;
 	color: white;
 	text-align: center;
+	font-size: 1.2em;
 	}
 
 
@@ -20,15 +24,28 @@ body {
 			width: 70%;
 			text-align: left;
 			color: white;
+			border-radius: 10px 0px 0px 0px;
+			font-size: 1.2em;
+
 			}
 
 		.c2 {
-			width: 26%;
+			width: 30%;
 			color: white;
+			border-radius: 0px 10px 0px 0px;
+			font-size: 1.2em;
 			}
+
+			.c2 a{
+				color: white;
+				  position: relative;
+ 				 top: 40px;	
+				}
+
 
 		.container {
 			width: 900px;
+			border-radius: 10px;
 			margin-left: auto;
 			margin-right: auto;
 			}
@@ -36,15 +53,15 @@ body {
 
 .container {
 	margin: 0;
-	padding: 0;
+	padding: 20px;
 	width: auto;
+	height: 70px;
 }
 
 .container div {
 	box-sizing: border-box;
 	min-width: 50px;
-	padding: 20px;
-	
+	padding: 20px;	
 }
 
 .c1 {
@@ -54,11 +71,11 @@ body {
 }
 
 .c2 {
-	color: white;
-	background-color: #F4F1BB;
+	background-color: #5b7989;
 }
-
-
+		.c2 a{
+			color: white;	
+			}
 
 .container {
 	display: -webkit-flex;
