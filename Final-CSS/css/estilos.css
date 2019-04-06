@@ -4,18 +4,48 @@ body {
 	background:  #02010a;
 }
 
+/*deslizar todo el container de abajo hacia arriba*/
+div {
+
+  position: relative;
+  -webkit-animation: slidein 2s ; /* Safari 4.0 - 8.0 */
+  animation: slidein 2s ;
+}
+
+@keyframes slidein {
+  0%   {top: 150px;}
+  60%  {top: -5px;}
+  100% {top: 0px; }
+}
+/*fin deslizamiento*/
+
 /*baja todo los div con respecto al borde de la pagina */
 .container {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+
 }
 /*MODIFICA EL ANCHO DE todos los  CONTENEDOR*/
 .container div {
 	box-sizing: border-box;/*esto hace que se incluya los bordes y no se muevan los contenedores*/
 	min-width: 100px;/*este el ancho minimo que puede tomar el contenedor*/
-	padding: 0px;/*este es el ancho del c4que contiene los otros 3 internos*/
+	padding: 20px;/*este es el ancho del c4que contiene los otros 3 internos*/
+
 }
+/*configuracion de sombra del titulo*/
+		.c5 {
+			width: 100%;
+			text-shadow: 2px 2px 2px #02010a;
+			margin-left: 10px;
+			font-size: 1.2em;
+			text-align: center;
+		}
+
+		.c6 {
+		text-align: center;
+		}
+/*..............................................................*/
 		.c1 {
 			color: white;
 			background-color: #5b7989;
@@ -37,6 +67,8 @@ body {
 		}
 
 
+
+
 /*encargado de la ubicacion de los contenedores para mayores de 600px*/
 .container {
 	display: -webkit-flex;
@@ -51,7 +83,7 @@ body {
 }
 
 
-/*cuando el ancho supera los 600px los contenedores cambian a C1:25 y c4:75*/
+/*cuando el ancho supera los 900px los contenedores cambian a C1:25 y c4:75*/
 @media (min-width: 900px) {
 	.c1 {
 		width: 100%;
@@ -59,7 +91,6 @@ body {
 	}
 		.c5 {
 			width: 70%;
-			text-shadow: 2px 2px 2px #02010a;
 			margin-left: 10px;
 		}
 
@@ -103,8 +134,31 @@ body {
 /*ancho de los cotenedor mas grande con respecto a la pantalla*/
 @media (min-width: 1000px) {
 	.container {
-		width: 1000px;
+		width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
+
 	}
+}
+
+			.c6 a{
+				color: white;
+			    position: relative;
+			    font-size: 1.5em;
+ 				top: 30px;	
+				}
+/*configuracion de imagenes*/
+#hotel img{
+
+width: 100%;
+}
+
+#paisaje img{
+
+width: 100%;
+}
+
+#retrato img{
+
+width: 100%;
 }
