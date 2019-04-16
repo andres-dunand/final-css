@@ -151,14 +151,29 @@ div {
 #hotel img{
 
 width: 100%;
+
 }
 
 #paisaje img{
 
 width: 100%;
+transition-property: border;
+transition: all 2000ms ease-in-out;
+
+     
+}
+
+#paisaje img:hover{
+	transform: rotate(-10deg);
+	border: solid 2px #82c3a6;
 }
 
 #retrato img{
 
 width: 100%;
+}
+
+h2{
+	text-align: center;
+	color: black;
 }
