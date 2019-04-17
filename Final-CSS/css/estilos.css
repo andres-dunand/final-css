@@ -49,6 +49,7 @@ div {
 		.c1 {
 			color: white;
 			background-color: #5b7989;
+			border-radius: 10px 10px 0px 0px;
 		}
 
 		.c2 {
@@ -64,10 +65,8 @@ div {
 		.c4 {
 			color: white;
 			background-color:  #C6d5c5;
+			border-radius: 0px 0px 10px 10px;
 		}
-
-
-
 
 /*encargado de la ubicacion de los contenedores para mayores de 600px*/
 .container {
@@ -147,33 +146,68 @@ div {
 			    font-size: 1.5em;
  				top: 30px;	
 				}
+
 /*configuracion de imagenes*/
+
 #hotel img{
 
+border-color: black;
+border-width:3px;
+border-style: solid; 
 width: 100%;
 
 }
 
 #paisaje img{
-
+border-color: black;
+border-width:0px 3px 3px 0px;
+border-style: solid; 
 width: 100%;
 transition-property: border;
-transition: all 2000ms ease-in-out;
-
+transition: all 1000ms ease-in-out;
      
 }
 
 #paisaje img:hover{
-	transform: rotate(-10deg);
+	-ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+	transform: rotate(10deg);
 	border: solid 2px #82c3a6;
 }
 
 #retrato img{
+	border-color: black;
+	border-width: 0px 3px 3px 0px;
+	border-style: solid; 
+	width: 100%;
+	transition: all 800ms ease-in-out;
+}
 
-width: 100%;
+#retrato img:hover{
+	-ms-transform: translate( 20px ,-10px); /* IE 9 */
+	-webkit-transform: translate( 20px ,-10px); /* Chrome, Safari, Opera */
+	transform: translate( 20px ,-10px);/* el primero es moviento en X segundo Y*/
+	border: solid 2px #82c3a6;
+}
+
+#redes img{
+	position: relative;
+	left: 70px;
+	border-radius: 10px;	
+	border-color: black;
+	border-style: solid; 
+	width: 20%;
 }
 
 h2{
 	text-align: center;
 	color: black;
+
 }
+
+h3{
+	text-align: center;
+	color: black;
+}
+
+
