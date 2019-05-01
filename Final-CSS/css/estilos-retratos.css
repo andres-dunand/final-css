@@ -1,81 +1,74 @@
+/*final css*/
 body {
-	font-family: Indie Flower;
+	font-family: Dancing Script;
+	background:  #02010a;
 }
 
-.c1, .c2, .c3, .c4, .c5 {
-width: 100%;
+/*deslizar todo el container de abajo hacia arriba*/
+div {
+
+  position: relative;
+  -webkit-animation: slidein 2s ; /* Safari 4.0 - 8.0 */
+  animation: slidein 2s ;
 }
 
-@media (min-width: 600px) {
-.c1 {
-	width: 100%;
-	}
-.c2, .c3, .c4, .c5 {
-	width: 50%;
-	}
+@keyframes slidein {
+  0%   {top: 150px;}
+  60%  {top: -5px;}
+  100% {top: 0px; }
 }
+/*fin deslizamiento*/
 
-@media (min-width: 800px) {
-.c1 {
-	width: 100%;
-	}
-
-.c2 {
-	width: 100%;
-	}
-
-.c3, .c4, .c5 {
-	width: 33.33%;
-	}
-
-.container {
-	width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-			}
-}
-
-
-
-
-
+/*baja todo los div con respecto al borde de la pagina */
 .container {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-}
 
+}
+/*MODIFICA EL ANCHO DE todos los  CONTENEDOR*/
 .container div {
-	box-sizing: border-box;
-	min-width: 150px;
-	padding: 20px;
-}
+	box-sizing: border-box;/*esto hace que se incluya los bordes y no se muevan los contenedores*/
+	min-width: 100px;/*este el ancho minimo que puede tomar el contenedor*/
+	padding: 20px;/*este es el ancho del c4que contiene los otros 3 internos*/
 
-.c1 {
-	color: black;
-	background-color: #E6EBE0;
 }
-s
-.c2 {
-	color: black;
-	background-color: #F4F1BB;
-}
+/*configuracion de sombra del titulo*/
+		.c5 {
+			width: 100%;
+			text-shadow: 2px 2px 2px #02010a;
+			margin-left: 10px;
+			font-size: 1.2em;
+			text-align: center;
+		}
 
-.c3 {
-	color: black;
-	background-color: #9BC1BC;
-}
+		.c6 {
+		text-align: center;
+		}
+/*..............................................................*/
+		.c1 {
+			color: white;
+			background-color: #5b7989;
+			border-radius: 10px 10px 0px 0px;
+		}
 
-.c4 {
-	color: black;
-	background-color: #36C9C6;
-}
+		.c2 {
+			color: white;
+			background-color: #d5c75f;
+		}
 
-.c5 {
-	color: white;
-	background-color: #ED6A5A;
-}
+		.c3 {
+			color: white;
+			background-color: #d5c75f;
+		}
 
+		.c4 {
+			color: white;
+			background-color:  #C6d5c5;
+			border-radius: 0px 0px 10px 10px;
+		}
+
+/*encargado de la ubicacion de los contenedores para mayores de 600px*/
 .container {
 	display: -webkit-flex;
 	display: flex;
@@ -83,3 +76,179 @@ s
 	flex-flow: row wrap;
 }
 
+/*se encarga de que en cualquier ancho de la pantalla los contenedores se adapteal al 100% del ancho*/
+.c1,.c2, .c3, .c4{
+	width: 100%;
+}
+
+
+/*cuando el ancho supera los 900px los contenedores cambian a C1:25 y c4:75*/
+@media (min-width: 900px) {
+	.c1 {
+		width: 100%;
+		display: flex;
+	}
+		.c5 {
+			width: 70%;
+			margin-left: 10px;
+		}
+
+		.c6 {
+			width: 30%;
+		}
+
+	.c2{
+		width: 100%;
+		display: flex;
+	}	
+		.c14 {
+			width: 33.33%;
+
+		}
+
+		.c15 {
+			width: 33.33%;
+		}
+
+		.c16 {
+			width: 33.33%;
+		}
+
+	.c3{
+		width: 100%;
+		display: flex;
+	}	
+		.c7 {
+			width: 33.33%;
+		}
+
+		.c8 {
+			width: 33.33%;
+		}
+
+		.c13 {
+			width: 33.33%;
+		}
+
+	.c4{
+		width: 100%;
+		display: flex;
+	}
+		.c9 {
+			width: 25%;
+		}
+
+		.c10 {
+			width: 25%;
+		}
+
+		.c11 {
+			width: 25%;
+		}
+
+		.c12 {
+			width: 25%;
+		}
+}
+
+/*ancho de los cotenedor mas grande con respecto a la pantalla*/
+@media (min-width: 1000px) {
+	.container {
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+}
+
+			.c6 a{
+				color: white;
+			    position: relative;
+			    font-size: 1.5em;
+ 				top: 30px;	
+				}
+
+/*configuracion de imagenes*/
+
+#retrato1 img{
+
+-webkit-filter: blur (10px);
+filter:blur(10px);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+#retrato2 img{
+
+-webkit-filter: grayscale (100%);
+filter:grayscale(100%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#retrato3 img{
+
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#retrato4 img{
+
+-webkit-filter: grayscale (100%);
+filter:grayscale(100%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+#retrato5 img{
+
+-webkit-filter: sepia (100%);
+filter:sepia(100%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+#retrato6 img{
+
+-webkit-filter: grayscale (100%);
+filter:grayscale(100%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+#redes img{
+
+	
+	left: 70px;
+	border-radius: 10px;	
+	border-color: black;
+	border-style: solid; 
+	width: 20%;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h2{
+
+	color: black;
+	text-align: center;
+
+}
+
+h3{
+
+	color: black;
+	text-align: center;
+
+}
